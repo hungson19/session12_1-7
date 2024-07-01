@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng số nguyên
+        let array = [3, -1, 4, -2, 5, -6, 7, -8];
+            
+        // Phân loại và kết hợp các phần tử âm và dương
+        let result = array.filter(num => num < 0).concat(array.filter(num => num > 0));
+            
+        // In mảng kết quả ra màn hình console
+        console.log("Mảng sau khi di chuyển các phần tử âm lên đầu và phần tử dương về cuối:", result);
+
+    </script>
+</body>
+</html>

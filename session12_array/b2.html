@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [10, 'apple', 25, 'banana', 30, 'cherry', 45];
+        var searchValue = prompt("Nhập giá trị để tìm kiếm trong mảng:");
+        var convertedValue = isNaN(searchValue) ? searchValue : Number(searchValue);
+
+        var index = array.indexOf(convertedValue);
+
+        if (index !== -1) {
+            console.log("Vị trí của phần tử trong mảng là: " + index);
+        } else {
+            console.log("Phần tử không tồn tại");
+        }
+
+    </script>
+</body>
+</html>

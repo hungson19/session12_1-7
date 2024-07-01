@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1, "hello", 3.14, true, 42, "world", 7, null, 2.5];
+        var hasInteger = false;
+
+        for (var i = 0; i < array.length; i++) {
+            if (Number.isInteger(array[i])) {
+                console.log(array[i]);
+                hasInteger = true;
+            }
+        }
+
+        if (!hasInteger) {
+            console.log("Trong mảng không tồn tại số nguyên");
+        }
+
+    </script>
+</body>
+</html>
